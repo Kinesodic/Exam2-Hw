@@ -12,6 +12,17 @@ void printarray (T *a, const int n)
 	cout << endl;
 } 
 
+template <class T>
+void load(T*a, const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Enter a value ";
+		cin >> a[i];
+	}
+	cout << "Done" << endl;
+}
+
 int main()
 {
 	const int n1 = 5, n2 = 7, n3 = 6;
