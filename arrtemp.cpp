@@ -11,7 +11,7 @@ void printarray (T *a, const int n)
 		cout << a[i] << "  ";
 	cout << endl;
 } 
-
+//testing 1 2 3 
 template <class T>
 void load(T*a, const int n)
 {
