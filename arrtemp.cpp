@@ -12,6 +12,29 @@ void printarray (T *a, const int n)
 	cout << endl;
 } 
 
+template <class T>
+void smallest(T *a, const int n)
+{
+	T small, smaller;
+	small = a[0];
+	smaller = a[1];
+	for (int i = 0; i < n; i++) 
+	{
+		if (a[i] < smaller)
+		{
+			if (a[i] < small)
+				small = smaller;
+			smaller = a[i];
+		}
+		if (a[i] < small) //but not less than smaller
+		{
+			small = a[i];
+		}
+		//if it is not smaller than either, nothing changes and the loop continues
+	}
+	//need to double check the return statement
+}
+
 int main()
 {
 	const int n1 = 5, n2 = 7, n3 = 6;
