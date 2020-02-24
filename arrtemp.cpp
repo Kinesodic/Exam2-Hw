@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 //function template to print an array
@@ -11,7 +12,7 @@ void printarray (T *a, const int n)
 		cout << a[i] << "  ";
 	cout << endl;
 } 
-//testing 1 2 3 
+
 template <class T>
 void load(T*a, const int n)
 {
