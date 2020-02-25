@@ -14,6 +14,30 @@ void printarray (T *a, const int n)
 } 
 
 template <class T>
+
+void smallest(T *a, const int n)
+{
+	T small, smaller;
+	small = a[0];
+	smaller = a[1];
+	for (int i = 0; i < n; i++) 
+	{
+		if (a[i] < smaller)
+		{
+			if (a[i] < small)
+				small = smaller;
+			smaller = a[i];
+		}
+		if (a[i] < small) //but not less than smaller
+		{
+			small = a[i];
+		}
+		//if it is not smaller than either, nothing changes and the loop continues
+	}
+	cout << "The smallest value is "" << smaller << ", and the second smallest is " << small << endl;
+}
+
+template <class T>
 void load(T*a, const int n)
 {
 	for (int i = 0; i < n; i++)
@@ -22,6 +46,7 @@ void load(T*a, const int n)
 		cin >> a[i];
 	}
 	cout << "Done" << endl;
+
 }
 
 int main()
