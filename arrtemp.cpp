@@ -32,7 +32,7 @@ void smallest(T *a, const int n)
 		}
 		//if it is not smaller than either, nothing changes and the loop continues
 	}
-	//need to double check the return statement
+	cout << "The smallest value is "" << smaller << ", and the second smallest is " << small << endl;
 }
 
 int main()
