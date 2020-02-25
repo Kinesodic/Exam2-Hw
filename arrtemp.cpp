@@ -24,7 +24,7 @@ void smallest(T *a, const int n)
 	{
 		if (a[i] < smaller)
 		{
-			if (a[i] < small)
+			if (small < smaller || a[i] < small)
 				small = smaller;
 			smaller = a[i];
 		}
