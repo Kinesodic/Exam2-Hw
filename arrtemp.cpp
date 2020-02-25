@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 //function template to print an array
@@ -13,6 +14,7 @@ void printarray (T *a, const int n)
 } 
 
 template <class T>
+
 void smallest(T *a, const int n)
 {
 	T small, smaller;
@@ -33,6 +35,17 @@ void smallest(T *a, const int n)
 		//if it is not smaller than either, nothing changes and the loop continues
 	}
 	cout << "The smallest value is "" << smaller << ", and the second smallest is " << small << endl;
+
+template <class T>
+void load(T*a, const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Enter a value ";
+		cin >> a[i];
+	}
+	cout << "Done" << endl;
+
 }
 
 int main()
